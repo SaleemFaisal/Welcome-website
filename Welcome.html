@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>	
+		<title>Welcome</title>
+		<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+        <h1>Enter Your Name: <h1>
+        <input id="nameInput"> <br> 
+        <button onclick="myFunction()" >Enter</button>
+        <h1 id="Greting"></h1>
+
+        <style>
+            body {background-color: black; text-align: center ; color: floralwhite ; }
+        </style>
+
+        <script>
+            function myFunction() {
+                let nameInput = document.querySelector("#nameInput");
+                let Greting = document.querySelector("#Greting");
+
+                Greting.innerHTML = "Welcome, " + nameInput.value;
+            }
+
+        </script>
+
+</body> 
+</html> 
